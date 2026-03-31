@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <AssemblyName>BlueMonsterLabs.ModernUI</AssemblyName>
+    <RootNamespace>BlueMonsterLabs.ModernUI</RootNamespace>
+    <NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\FBlueMonsterLabs.ModernUI.XML</DocumentationFile>
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
+    <UpdatePackageVersion>False</UpdatePackageVersion>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
+    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Release\BlueMonsterLabs.ModernUI.XML</DocumentationFile>
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>None.None.None.TimeStamp</AssemblyVersionSettings>
+    <UpdatePackageVersion>False</UpdatePackageVersion>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
+    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+    <Title>ModernUI.WPF.NET10</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>A Modern UI using WPF with .NET 10</Description>
+    <Copyright>Copyright (c) Blue Monster Labs 2026</Copyright>
+    <Authors>Blue Monster Labs</Authors>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageIcon>blue_monster_icon.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/BlueMonsterLabs/BlueMonsterLabs.ModernUI</RepositoryUrl>
+    <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="5.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\background.kitty.png" />
+    <Resource Include="Assets\background.love.jpg" />
+    <Resource Include="Assets\background.snowflakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Assets\appbar.add.xaml" />
+    <Page Remove="Assets\appbar.adobe.bridge.xaml" />
+    <Page Remove="Assets\appbar.arrow.collapsed.xaml" />
+    <Page Remove="Assets\appbar.arrow.corner.up.right.xaml" />
+    <Page Remove="Assets\appbar.arrow.down.xaml" />
+    <Page Remove="Assets\appbar.arrow.expand.xaml" />
+    <Page Remove="Assets\appbar.box.xaml" />
+    <Page Remove="Assets\appbar.camera.flash.off.xaml" />
+    <Page Remove="Assets\appbar.camera.flash.xaml" />
+    <Page Remove="Assets\appbar.camera.xaml" />
+    <Page Remove="Assets\appbar.cards.club.xaml" />
+    <Page Remove="Assets\appbar.cards.diamond.xaml" />
+    <Page Remove="Assets\appbar.cards.heart.xaml" />
+    <Page Remove="Assets\appbar.cards.spade.xaml" />
+    <Page Remove="Assets\appbar.check.xaml" />
+    <EmbeddedResource Include="Assets\appbar.add.xaml" />
+    <EmbeddedResource Include="Assets\appbar.adobe.bridge.xaml" />
+    <EmbeddedResource Include="Assets\appbar.arrow.collapsed.xaml" />
+    <EmbeddedResource Include="Assets\appbar.arrow.corner.up.right.xaml" />
+    <EmbeddedResource Include="Assets\appbar.arrow.down.xaml" />
+    <EmbeddedResource Include="Assets\appbar.arrow.expand.xaml" />
+    <EmbeddedResource Include="Assets\appbar.box.xaml" />
+    <EmbeddedResource Include="Assets\appbar.camera.flash.off.xaml" />
+    <EmbeddedResource Include="Assets\appbar.camera.flash.xaml" />
+    <EmbeddedResource Include="Assets\appbar.camera.xaml" />
+    <EmbeddedResource Include="Assets\appbar.cards.club.xaml" />
+    <EmbeddedResource Include="Assets\appbar.cards.diamond.xaml" />
+    <EmbeddedResource Include="Assets\appbar.cards.heart.xaml" />
+    <EmbeddedResource Include="Assets\appbar.cards.spade.xaml" />
+    <EmbeddedResource Include="Assets\appbar.check.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources.pl.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.pl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Update="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources.pl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pl.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\blue_monster_icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <LocalNuGetFeed>C:\NuGetLocal</LocalNuGetFeed>
+  </PropertyGroup>
+
+  <Target Name="CopyPackageToLocalFeed" AfterTargets="Pack">
+    <MakeDir Directories="$(LocalNuGetFeed)" Condition="!Exists('$(LocalNuGetFeed)')" />
+    <Copy SourceFiles="$(PackageOutputPath)\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(LocalNuGetFeed)" />
+  </Target>
+</Project>

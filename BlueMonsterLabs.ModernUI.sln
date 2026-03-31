@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11620.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueMonsterLabs.ModernUI", "BlueMonsterLabs.ModernUI\BlueMonsterLabs.ModernUI.csproj", "{9A653A28-FE46-40E8-A14F-48B0E325165D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueMonsterLabs.ModernUI.App", "BlueMonsterLabs.ModernUI.App\BlueMonsterLabs.ModernUI.App.csproj", "{BA5911EB-F34B-4F8D-AB29-6B967ED0B8DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "License", "License", "{2AC3CC94-8119-4CDC-A01C-02455F8E8AF5}"
+	ProjectSection(SolutionItems) = preProject
+		License.Icons.txt = License.Icons.txt
+		License.RelativeAnimatingContentControl.txt = License.RelativeAnimatingContentControl.txt
+		License.txt = License.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9FB8D23-82E9-461E-A1AC-DED061D98B9D}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlueMonsterLabs.ModernUI.Templates", "BlueMonsterLabs.ModernUI.Templates", "{55A12598-A02D-4B6B-97DD-A12D295ADF2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5911EB-F34B-4F8D-AB29-6B967ED0B8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5911EB-F34B-4F8D-AB29-6B967ED0B8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5911EB-F34B-4F8D-AB29-6B967ED0B8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5911EB-F34B-4F8D-AB29-6B967ED0B8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F51763D-ABCE-4AA3-B1A3-9054F28B2D85}
+	EndGlobalSection
+EndGlobal

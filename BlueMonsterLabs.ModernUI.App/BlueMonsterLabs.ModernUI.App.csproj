@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ModernUIDemo</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BlueMonsterLabs.ModernUI.App.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlueMonsterLabs.ModernUI\BlueMonsterLabs.ModernUI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BlueMonsterLabs.ModernUI" Version="1.0.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.3.1" />
+  </ItemGroup>
+</Project>
