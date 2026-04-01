@@ -9,9 +9,9 @@ using System.Windows.Markup;
 // associated with an assembly.
 [assembly: AssemblyTitle("ModernUI")]
 [assembly: AssemblyConfiguration("retail")]
-[assembly: AssemblyCompany("First Floor Software")]
+[assembly: AssemblyCompany("Blue Monster Labs")]
 [assembly: AssemblyProduct("ModernUI")]
-[assembly: AssemblyCopyright("Copyright © First Floor Software 2013-2016")]
+[assembly: AssemblyCopyright("Copyright ©Blue Monster Labs 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -27,8 +27,9 @@ using System.Windows.Markup;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0421")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+//
+// This setting being managed by GitVersion.MSBuild
+//
 
 
 [assembly: ThemeInfo(

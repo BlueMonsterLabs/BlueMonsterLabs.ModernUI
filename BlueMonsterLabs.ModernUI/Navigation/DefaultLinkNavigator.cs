@@ -89,7 +89,17 @@ namespace BlueMonsterLabs.ModernUI.Windows.Navigation
             else if (uri.IsAbsoluteUri && this.externalSchemes != null && this.externalSchemes.Any(s => uri.Scheme.Equals(s, StringComparison.OrdinalIgnoreCase)))
             {
                 // uri is external, load in default browser
-                Process.Start(uri.AbsoluteUri);
+                try
+                {
+                    var psi = new ProcessStartInfo(uri.AbsoluteUri) { UseShellExecute = true };
+                    Process.Start(psi);
+                }
+                catch
+                {
+                    // fallback for older runtimes - best effort, swallow exceptions
+                    try { Process.Start(uri.AbsoluteUri); } catch { }
+                }
+
                 return;
             }
             else

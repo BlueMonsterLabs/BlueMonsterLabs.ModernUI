@@ -11,5 +11,10 @@ namespace BlueMonsterLabs.ModernUI.App.Pages
         {
             InitializeComponent();
         }
+
+        private void ModernButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }
