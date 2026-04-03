@@ -1,0 +1,169 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mui="https://github.com/BlueMonsterLabs/BlueMonsterLabs.ModernUI">
+
+    <!-- Pink & Red smoke theme palette
+
+    Opacity %                   Hex Alpha (AA)
+    100% (Opaque)	            FFxxxxxx
+    75%	                        BFxxxxxx
+    50%                     	80xxxxxx
+    25%                     	40xxxxxx
+    0% (Transparent)        	00xxxxxx
+
+    -->
+
+    <!-- Base background color for windows -->
+    <Color x:Key="WindowBackgroundColor">#FFC9A9A6</Color>
+
+    <Color x:Key="SmokeDustyRose">#FFFFE4EC</Color>
+    <Color x:Key="SmokeSoftPink">#FFE89EB8</Color>
+    <Color x:Key="SmokePuce">#FFA95C68</Color>
+    <Color x:Key="SmokeThistle">#FFD8BFD8</Color>
+    <Color x:Key="AccentColor">#FFFF66CD</Color>
+
+    <!-- Buttons -->
+    <SolidColorBrush x:Key="ButtonBackground" Color="#FFFFFAFC" />
+    <SolidColorBrush x:Key="ButtonBackgroundHover" Color="#FFFFEBEE" />
+    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="ButtonBorderHover" Color="#FFE91E63" />
+    <SolidColorBrush x:Key="ButtonBorderPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonText" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="ButtonTextHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="ButtonTextPressed" Color="#FFFFF0F3" />
+    <SolidColorBrush x:Key="ButtonTextDisabled" Color="#FFCC9E9E" />
+
+    <!-- DataGrid -->
+    <SolidColorBrush x:Key="DataGridBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGridForeground" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="DataGridCellBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGridCellBackgroundHover" Color="#FFFFEBEE" />
+    <SolidColorBrush x:Key="DataGridCellBackgroundSelected" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DataGridCellForeground" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="DataGridCellForegroundHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="DataGridCellForegroundSelected" Color="#FFFFF0F3" />
+    <SolidColorBrush x:Key="DataGridHeaderBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundHover" Color="#FFFFEBEE" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundSelected" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DataGridHeaderForeground" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="DataGridHeaderForegroundHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="DataGridHeaderForegroundPressed" Color="#FFFFF0F3" />
+    <SolidColorBrush x:Key="DataGridHeaderForegroundSelected" Color="#FFFFF0F3" />
+    <SolidColorBrush x:Key="DataGridGridLines" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="DataGridDropSeparator" Color="{DynamicResource AccentColor}" />
+
+    <!-- Hyperlinks -->
+    <SolidColorBrush x:Key="Hyperlink" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="HyperlinkHover" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="HyperlinkDisabled" Color="#FFCC9E9E" />
+
+    <!-- Inputs -->
+    <SolidColorBrush x:Key="InputBackground" Color="#FFFFFAFC" />
+    <SolidColorBrush x:Key="InputBackgroundHover" Color="#FFFFFAFC" />
+    <SolidColorBrush x:Key="InputBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="InputBorderHover" Color="#FFE91E63" />
+    <SolidColorBrush x:Key="InputText" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="InputTextHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="InputTextDisabled" Color="#FFCC9E9E" />
+
+    <!-- Items -->
+    <SolidColorBrush x:Key="ItemBackgroundHover" Color="#FFFFEBEE" />
+    <SolidColorBrush x:Key="ItemBackgroundSelected" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ItemBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="ItemText" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="ItemTextSelected" Color="#FFFFF0F3" />
+    <SolidColorBrush x:Key="ItemTextHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="ItemTextDisabled" Color="#FFCC9E9E" />
+
+    <!-- Link buttons -->
+    <SolidColorBrush x:Key="LinkButtonText" Color="#FFAD1457" />
+    <SolidColorBrush x:Key="LinkButtonTextHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="LinkButtonTextPressed" Color="#FFCC9E9E" />
+    <SolidColorBrush x:Key="LinkButtonTextDisabled" Color="#FFCC9E9E" />
+
+    <!-- Menu text -->
+    <SolidColorBrush x:Key="MenuText" Color="#DD4A0E2B" />
+    <SolidColorBrush x:Key="MenuTextHover" Color="#FFAD1457" />
+    <SolidColorBrush x:Key="MenuTextSelected" Color="#FF880E4F" />
+
+    <!-- ModernButton -->
+    <SolidColorBrush x:Key="ModernButtonBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="ModernButtonBorderHover" Color="#FFE91E63" />
+    <SolidColorBrush x:Key="ModernButtonBorderPressed" Color="#FFC2185B" />
+    <SolidColorBrush x:Key="ModernButtonBorderDisabled" Color="#FFCC9E9E" />
+    <SolidColorBrush x:Key="ModernButtonIconBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ModernButtonIconForegroundPressed" Color="#FFFFF0F3" />
+    <SolidColorBrush x:Key="ModernButtonText" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="ModernButtonTextHover" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="ModernButtonTextPressed" Color="#FF6A1B3D" />
+    <SolidColorBrush x:Key="ModernButtonTextDisabled" Color="#FFCC9E9E" />
+
+    <!-- Popup / progress -->
+    <SolidColorBrush x:Key="PopupBackground" Color="#FFFFF3F5" />
+    <SolidColorBrush x:Key="ProgressBackground" Color="#FFFFCDD2" />
+
+    <!-- Scrollbars -->
+    <SolidColorBrush x:Key="ScrollBarBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundDragging" Color="#FFE57373" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundHover" Color="#FFFFCDD2" />
+    <SolidColorBrush x:Key="ScrollBarThumbBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="ScrollBarThumbForeground" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundDragging" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundHover" Color="Transparent" />
+
+    <!-- Separator -->
+    <SolidColorBrush x:Key="SeparatorBackground" Color="#FFF5CED8" />
+
+    <!-- Slider -->
+    <SolidColorBrush x:Key="SliderSelectionBackground" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderSelectionBorder" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderThumbBackground" Color="#FFFFFAFC" />
+    <SolidColorBrush x:Key="SliderThumbBackgroundDragging" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderThumbBackgroundHover" Color="#FFFFEBEE" />
+    <SolidColorBrush x:Key="SliderThumbBackgroundDisabled" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="SliderThumbBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="SliderThumbBorderDragging" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderThumbBorderHover" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="SliderThumbBorderDisabled" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="SliderTrackBackground" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="SliderTrackBorder" Color="#FFF5CED8" />
+    <SolidColorBrush x:Key="SliderTick" Color="#FFCC9E9E" />
+    <SolidColorBrush x:Key="SliderTickDisabled" Color="#FFF5CED8" />
+
+    <!-- Submenu text -->
+    <SolidColorBrush x:Key="SubMenuText" Color="#DD4A0E2B" />
+    <SolidColorBrush x:Key="SubMenuTextHover" Color="#FFAD1457" />
+    <SolidColorBrush x:Key="SubMenuTextSelected" Color="#FF880E4F" />
+
+    <!-- Window -->
+    <ImageBrush x:Key="WindowBackground"
+                Opacity="1"
+                ImageSource="pack://application:,,,/Assets/background.smoke.png"
+                Stretch="UniformToFill"/>
+    <SolidColorBrush x:Key="WindowBorder" Color="{DynamicResource AccentColor}" Opacity=".5" />
+    <SolidColorBrush x:Key="WindowBorderActive" Color="{DynamicResource AccentColor}" />
+    <LinearGradientBrush x:Key="WindowHeaderGradient" StartPoint="0, 0" EndPoint="0, 1" Opacity=".1">
+        <GradientStop Offset="0" Color="{DynamicResource AccentColor}" />
+        <GradientStop Offset=".3" Color="{DynamicResource AccentColor}" />
+        <GradientStop Offset="1" Color="Transparent" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="WindowText" Color="#FF4A0E2B" />
+    <SolidColorBrush x:Key="WindowTextReadOnly" Color="#FFCC9E9E" />
+
+    <!-- Window system buttons -->
+    <SolidColorBrush x:Key="CloseButtonBackground" Color="{StaticResource WindowBackgroundColor}" Opacity="0" />
+    <SolidColorBrush x:Key="CloseButtonBackgroundOnMoseOver" Color="#FFFFCDD2" />
+    <SolidColorBrush x:Key="CloseButtonForegroundOnMoseOver" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="CloseButtonBackgroundIsPressed" Color="#FFE53935" />
+    <SolidColorBrush x:Key="CloseButtonForegroundIsPressed" Color="#FFFFF0F3" />
+
+    <SolidColorBrush x:Key="SystemButtonBackground" Color="{StaticResource WindowBackgroundColor}" Opacity="0" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundOnMoseOver" Color="#FFFFCDD2" />
+    <SolidColorBrush x:Key="SystemButtonForegroundOnMoseOver" Color="#FF880E4F" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundIsPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SystemButtonForegroundIsPressed" Color="#FFCC9E9E" />
+
+</ResourceDictionary>

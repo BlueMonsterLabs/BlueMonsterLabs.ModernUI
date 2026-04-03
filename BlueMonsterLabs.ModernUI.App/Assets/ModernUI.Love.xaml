@@ -1,0 +1,160 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mui="https://github.com/BlueMonsterLabs/BlueMonsterLabs.ModernUI">
+
+    <!-- Base background color for windows -->
+    <Color x:Key="WindowBackgroundColor">#FFFDE4F2</Color>
+
+    <Color x:Key="LoveWhisperPink">#FFFDE4F2</Color>
+    <Color x:Key="LoveSoftLilac">#FFF9CEE7</Color>
+    <Color x:Key="LoveBabyPink">#FFF4B8DA</Color>
+    <Color x:Key="LoveCottonCandy">#FFEEA1CD</Color>
+    <Color x:Key="AccentColor">#FFFF66CD</Color>
+    
+    <SolidColorBrush x:Key="Accent" Color="{DynamicResource AccentColor}" />
+
+    <!-- Buttons -->
+    <SolidColorBrush x:Key="ButtonBackground" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="ButtonBackgroundHover" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="ButtonBorderHover" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBorderPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="ButtonTextHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="ButtonTextPressed" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="ButtonTextDisabled" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- DataGrid -->
+    <SolidColorBrush x:Key="DataGridBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGridForeground" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="DataGridCellBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGridCellBackgroundHover" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="DataGridCellBackgroundSelected" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DataGridCellForeground" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="DataGridCellForegroundHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="DataGridCellForegroundSelected" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="DataGridHeaderBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundHover" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundSelected" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="DataGridHeaderForeground" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="DataGridHeaderForegroundHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="DataGridHeaderForegroundPressed" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="DataGridHeaderForegroundSelected" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="DataGridGridLines" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="DataGridDropSeparator" Color="{DynamicResource AccentColor}" />
+
+    <!-- Hyperlinks -->
+    <SolidColorBrush x:Key="Hyperlink" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="HyperlinkHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="HyperlinkDisabled" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- Inputs -->
+    <SolidColorBrush x:Key="InputBackground" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="InputBackgroundHover" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="InputBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="InputBorderHover" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="InputText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="InputTextHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="InputTextDisabled" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- Items -->
+    <SolidColorBrush x:Key="ItemBackgroundHover" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="ItemBackgroundSelected" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ItemBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="ItemText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="ItemTextSelected" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="ItemTextHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="ItemTextDisabled" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- Link buttons -->
+    <SolidColorBrush x:Key="LinkButtonText" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="LinkButtonTextHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="LinkButtonTextPressed" Color="{StaticResource LoveBabyPink}" />
+    <SolidColorBrush x:Key="LinkButtonTextDisabled" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- Menu text -->
+    <SolidColorBrush x:Key="MenuText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="MenuTextHover" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="MenuTextSelected" Color="{StaticResource LoveCottonCandy}" />
+
+    <!-- ModernButton -->
+    <SolidColorBrush x:Key="ModernButtonBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="ModernButtonBorderHover" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ModernButtonBorderPressed" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="ModernButtonBorderDisabled" Color="{StaticResource LoveBabyPink}" />
+    <SolidColorBrush x:Key="ModernButtonIconBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ModernButtonIconForegroundPressed" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="ModernButtonText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="ModernButtonTextHover" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="ModernButtonTextPressed" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="ModernButtonTextDisabled" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- Popup / progress -->
+    <SolidColorBrush x:Key="PopupBackground" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="ProgressBackground" Color="{StaticResource LoveSoftLilac}" />
+
+    <!-- Scrollbars -->
+    <SolidColorBrush x:Key="ScrollBarBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundDragging" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundHover" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="ScrollBarThumbBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="ScrollBarThumbForeground" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundDragging" Color="Transparent" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundHover" Color="Transparent" />
+
+    <!-- Separator -->
+    <SolidColorBrush x:Key="SeparatorBackground" Color="{StaticResource LoveSoftLilac}" />
+
+    <!-- Slider -->
+    <SolidColorBrush x:Key="SliderSelectionBackground" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderSelectionBorder" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderThumbBackground" Color="{StaticResource LoveWhisperPink}" />
+    <SolidColorBrush x:Key="SliderThumbBackgroundDragging" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderThumbBackgroundHover" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="SliderThumbBackgroundDisabled" Color="{StaticResource LoveBabyPink}" />
+    <SolidColorBrush x:Key="SliderThumbBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="SliderThumbBorderDragging" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SliderThumbBorderHover" Color="{StaticResource LoveBabyPink}" />
+    <SolidColorBrush x:Key="SliderThumbBorderDisabled" Color="{StaticResource LoveBabyPink}" />
+    <SolidColorBrush x:Key="SliderTrackBackground" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="SliderTrackBorder" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="SliderTick" Color="{StaticResource LoveBabyPink}" />
+    <SolidColorBrush x:Key="SliderTickDisabled" Color="{StaticResource LoveSoftLilac}" />
+
+    <!-- Submenu text -->
+    <SolidColorBrush x:Key="SubMenuText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SubMenuTextHover" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SubMenuTextSelected" Color="{StaticResource LoveCottonCandy}" />
+
+    <!-- Window -->
+    <ImageBrush x:Key="WindowBackground"
+                Opacity="1"
+                ImageSource="pack://application:,,,/Assets/background.love.jpg"
+                Stretch="UniformToFill"/>
+    <SolidColorBrush x:Key="WindowBorder" Color="{DynamicResource AccentColor}" Opacity=".5" />
+    <SolidColorBrush x:Key="WindowBorderActive" Color="{DynamicResource AccentColor}" />
+    <LinearGradientBrush x:Key="WindowHeaderGradient" StartPoint="0, 0" EndPoint="0, 1" Opacity=".1">
+        <GradientStop Offset="0" Color="{DynamicResource AccentColor}" />
+        <GradientStop Offset=".3" Color="{DynamicResource AccentColor}" />
+        <GradientStop Offset="1" Color="Transparent" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="WindowText" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="WindowTextReadOnly" Color="{StaticResource LoveBabyPink}" />
+
+    <!-- Window system buttons -->
+    <SolidColorBrush x:Key="CloseButtonBackground" Color="{StaticResource WindowBackgroundColor}" Opacity="0" />
+    <SolidColorBrush x:Key="CloseButtonBackgroundOnMoseOver" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="CloseButtonForegroundOnMoseOver" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="CloseButtonBackgroundIsPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="CloseButtonForegroundIsPressed" Color="{StaticResource LoveWhisperPink}" />
+
+    <SolidColorBrush x:Key="SystemButtonBackground" Color="{StaticResource WindowBackgroundColor}" Opacity="0" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundOnMoseOver" Color="{StaticResource LoveSoftLilac}" />
+    <SolidColorBrush x:Key="SystemButtonForegroundOnMoseOver" Color="{StaticResource LoveCottonCandy}" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundIsPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="SystemButtonForegroundIsPressed" Color="{StaticResource LoveBabyPink}" />
+
+</ResourceDictionary>

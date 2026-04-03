@@ -59,11 +59,6 @@
     <PackageReference Include="MaterialDesignThemes" Version="5.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\background.kitty.png" />
-    <Resource Include="Assets\background.love.jpg" />
-    <Resource Include="Assets\background.snowflakes.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Remove="Assets\appbar.add.xaml" />
     <Page Remove="Assets\appbar.adobe.bridge.xaml" />
     <Page Remove="Assets\appbar.arrow.collapsed.xaml" />

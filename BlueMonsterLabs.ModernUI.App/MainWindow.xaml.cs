@@ -1,4 +1,5 @@
-﻿using BlueMonsterLabs.ModernUI.Windows.Controls;
+﻿using System;
+using BlueMonsterLabs.ModernUI.Windows.Controls;
 
 namespace BlueMonsterLabs.ModernUI.App
 {
@@ -10,6 +11,7 @@ namespace BlueMonsterLabs.ModernUI.App
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

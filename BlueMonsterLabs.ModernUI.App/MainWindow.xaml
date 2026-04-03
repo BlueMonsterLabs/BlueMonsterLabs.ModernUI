@@ -7,6 +7,10 @@
                   ContentSource="/Pages/Introduction.xaml"
                   Width="800" Height="700">
     
+    <mui:ModernWindow.BackgroundContent>
+        <Rectangle Fill="{DynamicResource WindowBackground}" />
+    </mui:ModernWindow.BackgroundContent>
+
     <mui:ModernWindow.TitleLinks>
         <mui:Link DisplayName="Settings" Source="/Pages/Settings.xaml" />
         <mui:Link DisplayName="Help" Source="https://github.com/BlueMonsterLabs/ModernUI" />

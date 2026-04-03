@@ -5,8 +5,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <!--- ModernUI controls -->
                 <ResourceDictionary Source="/BlueMonsterLabs.ModernUI;component/Assets/ModernUI.xaml" />
-                <ResourceDictionary Source="/BlueMonsterLabs.ModernUI;component/Assets/ModernUI.Light.xaml" />
+                <!-- Your special theme -->
+                <ResourceDictionary Source="/Assets/ModernUI.Smoke.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

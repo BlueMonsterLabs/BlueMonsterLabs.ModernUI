@@ -16,6 +16,12 @@
     <StartupObject>BlueMonsterLabs.ModernUI.App.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Assets\background.kitty.png" />
+    <None Remove="Assets\background.love.jpg" />
+    <None Remove="Assets\background.smoke.png" />
+    <None Remove="Assets\background.snowflakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
@@ -24,5 +30,11 @@
   <ItemGroup>
     <PackageReference Include="BlueMonsterLabs.ModernUI" Version="1.0.0" />
     <PackageReference Include="MaterialDesignThemes" Version="5.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\background.kitty.png" />
+    <Resource Include="Assets\background.love.jpg" />
+    <Resource Include="Assets\background.smoke.png" />
+    <Resource Include="Assets\background.snowflakes.jpg" />
   </ItemGroup>
 </Project>

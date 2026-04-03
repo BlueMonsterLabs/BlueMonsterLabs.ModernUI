@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 
 namespace BlueMonsterLabs.ModernUI.Windows.Controls
 {
@@ -48,6 +49,14 @@ namespace BlueMonsterLabs.ModernUI.Windows.Controls
         /// Identifies the LinkNavigator dependency property.
         /// </summary>
         public static DependencyProperty LinkNavigatorProperty = DependencyProperty.Register("LinkNavigator", typeof(ILinkNavigator), typeof(ModernWindow), new PropertyMetadata(new DefaultLinkNavigator()));
+        /// <summary>
+        /// Identifies the BackgroundImageSource dependency property.
+        /// </summary>
+        public static readonly DependencyProperty BackgroundImageSourceProperty = DependencyProperty.Register(
+            nameof(BackgroundImageSource),
+            typeof(Uri),
+            typeof(ModernWindow),
+            new PropertyMetadata(null, OnBackgroundImageSourceChanged));
 
         private Storyboard backgroundAnimation;
 
@@ -182,6 +191,41 @@ namespace BlueMonsterLabs.ModernUI.Windows.Controls
         private void OnRestoreWindow(object target, ExecutedRoutedEventArgs e)
         {
             SystemCommands.RestoreWindow(this);
+        }
+
+        private static void OnBackgroundImageSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var window = (ModernWindow)d;
+            var uri = e.NewValue as Uri;
+
+            if (uri == null)
+            {
+                window.BackgroundContent = null;
+                return;
+            }
+
+            var image = new BitmapImage(uri);
+
+            var brush = new ImageBrush(image)
+            {
+                Stretch = Stretch.UniformToFill,
+                Opacity = 0.1
+            };
+
+            window.BackgroundContent = new Border
+            {
+                Background = brush
+            };
+        }
+
+        /// <summary>
+        /// Gets or sets the background image for this window.
+        /// When set, the window will render this image behind its content.
+        /// </summary>
+        public Uri BackgroundImageSource
+        {
+            get { return (Uri)GetValue(BackgroundImageSourceProperty); }
+            set { SetValue(BackgroundImageSourceProperty, value); }
         }
 
         /// <summary>
