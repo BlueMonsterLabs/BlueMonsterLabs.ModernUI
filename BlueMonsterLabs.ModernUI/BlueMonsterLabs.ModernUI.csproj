@@ -12,16 +12,14 @@
     <AssemblyName>BlueMonsterLabs.ModernUI</AssemblyName>
     <RootNamespace>BlueMonsterLabs.ModernUI</RootNamespace>
     <NoWarn>CA1416</NoWarn>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageOutputPath>$(SolutionDir)LocalPackages</PackageOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>bin\Debug\FBlueMonsterLabs.ModernUI.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\BlueMonsterLabs.ModernUI.XML</DocumentationFile>
     <ShouldCreateLogs>True</ShouldCreateLogs>
     <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
-    <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
-    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
-    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
-    <UpdatePackageVersion>False</UpdatePackageVersion>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
   </PropertyGroup>
@@ -30,18 +28,13 @@
     <DocumentationFile>bin\Release\BlueMonsterLabs.ModernUI.XML</DocumentationFile>
     <ShouldCreateLogs>True</ShouldCreateLogs>
     <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
-    <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
-    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
-    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
     <AssemblyVersionSettings>None.None.None.TimeStamp</AssemblyVersionSettings>
-    <UpdatePackageVersion>False</UpdatePackageVersion>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
     <Title>ModernUI.WPF.NET10</Title>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>A Modern UI using WPF with .NET 10</Description>
     <Copyright>Copyright (c) Blue Monster Labs 2026</Copyright>
     <Authors>Blue Monster Labs</Authors>
@@ -127,6 +120,10 @@
 
   <Target Name="CopyPackageToLocalFeed" AfterTargets="Pack">
     <MakeDir Directories="$(LocalNuGetFeed)" Condition="!Exists('$(LocalNuGetFeed)')" />
-    <Copy SourceFiles="$(PackageOutputPath)\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(LocalNuGetFeed)" />
+    <!-- Use item group to find the generated nupkg since GitVersion sets the version property dynamically -->
+    <ItemGroup>
+      <GeneratedPackages Include="$(PackageOutputPath)\*.nupkg" Exclude="$(PackageOutputPath)\*.symbols.nupkg;$(PackageOutputPath)\*.snupkg" />
+    </ItemGroup>
+    <Copy SourceFiles="@(GeneratedPackages)" DestinationFolder="$(LocalNuGetFeed)" />
   </Target>
 </Project>

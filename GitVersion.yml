@@ -1,0 +1,13 @@
+﻿mode: ContinuousDelivery
+continuous-delivery-fallback-tag: ''
+branches:
+  main:
+    regex: ^master$|^main$
+    mode: ContinuousDelivery
+    tag: alpha
+    increment: None
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch: true
+    is-mainline: false
