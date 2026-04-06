@@ -126,4 +126,12 @@
     </ItemGroup>
     <Copy SourceFiles="@(GeneratedPackages)" DestinationFolder="$(LocalNuGetFeed)" />
   </Target>
+
+  <!-- This target dynamically appends a timestamp to your package version so it updates on every single build -->
+  <Target Name="UpdatePackageVersionWithTimestamp" BeforeTargets="GenerateNuspec" DependsOnTargets="GetVersion">
+    <PropertyGroup>
+      <PackageVersion>$(GitVersion_MajorMinorPatch)-alpha.$(GitVersion_CommitsSinceVersionSource).$([System.DateTime]::Now.ToString('dHHmm'))</PackageVersion>
+    </PropertyGroup>
+  </Target>
+
 </Project>
