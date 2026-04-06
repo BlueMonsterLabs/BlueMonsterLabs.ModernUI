@@ -1,8 +1,7 @@
 next-version: 1.0.0
-assembly-versioning-scheme: MajorMinorPatch
-mode: ContinuousDelivery
+mode: ContinuousDeployment
 branches:
   main:
-    regex: ^master$|^main$
-    mode: ContinuousDelivery
+    label: alpha
+  develop:
     label: alpha

@@ -118,9 +118,21 @@
     <LocalNuGetFeed>C:\NuGetLocal</LocalNuGetFeed>
   </PropertyGroup>
 
+  <!-- Append dHHmm timestamp to the prerelease label after GitVersion sets the version -->
+  <Target Name="AppendTimestampToVersion" AfterTargets="GetVersion">
+    <PropertyGroup>
+      <PackageVersion>$(PackageVersion).$([System.DateTime]::Now.ToString("dHHmm"))</PackageVersion>
+    </PropertyGroup>
+  </Target>
+
   <Target Name="CopyPackageToLocalFeed" AfterTargets="Pack">
     <MakeDir Directories="$(LocalNuGetFeed)" Condition="!Exists('$(LocalNuGetFeed)')" />
-    <!-- Use item group to find the generated nupkg since GitVersion sets the version property dynamically -->
+    <!-- Remove old versions of this package from the local feed -->
+    <ItemGroup>
+      <OldPackages Include="$(LocalNuGetFeed)\BlueMonsterLabs.ModernUI.*.nupkg" />
+    </ItemGroup>
+    <Delete Files="@(OldPackages)" />
+    <!-- Copy the freshly built package -->
     <ItemGroup>
       <GeneratedPackages Include="$(PackageOutputPath)\*.nupkg" Exclude="$(PackageOutputPath)\*.symbols.nupkg;$(PackageOutputPath)\*.snupkg" />
     </ItemGroup>
